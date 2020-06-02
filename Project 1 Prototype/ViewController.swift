@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     private let networkRelated = NetworkRelatedClass()
+    private let dataParsing = DataParsingClass()
     private let dbLink = "http://www.blackbee.lt/a.php"
-
+    private var carRequestData: [CarRequestStruct] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         readDataFrom(url: dbLink)
@@ -20,10 +22,10 @@ class ViewController: UIViewController {
     
     func readDataFrom(url: String) {
         networkRelated.readJson(fromURL: dbLink, completion: { (result) in
-            guard let result = result else {
-                return
+            guard let result = result else { return }
+            self.dataParsing.parseDataOfCarRequest(fromData: result) { (parsedResult) in
+                self.carRequestData = parsedResult
             }
-            print(result)
         })
     }
     

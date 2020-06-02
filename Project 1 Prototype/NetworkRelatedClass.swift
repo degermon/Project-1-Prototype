@@ -9,15 +9,11 @@
 import Foundation
 
 class NetworkRelatedClass {
-    
-    func readJson(fromURL: String, completion: @escaping (_ response: String?) -> ()) {
+    func readJson(fromURL: String, completion: @escaping (_ data: Data?) -> ()) {
         if let url = URL(string: fromURL) {
-           URLSession.shared.dataTask(with: url) { data, response, error in
-              if let data = data {
-                 if let jsonString = String(data: data, encoding: .utf8) {
-                    completion(jsonString)
-                 }
-               }
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data else { return }
+                completion(data)
            }.resume()
         }
     }
