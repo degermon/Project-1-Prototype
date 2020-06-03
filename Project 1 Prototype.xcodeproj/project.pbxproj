@@ -16,6 +16,10 @@
 		655333A12486A5580081B1CD /* NetworkRelatedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333A02486A5580081B1CD /* NetworkRelatedClass.swift */; };
 		655333A32486AB040081B1CD /* CarRequestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333A22486AB040081B1CD /* CarRequestStruct.swift */; };
 		655333A52486B7740081B1CD /* DataParsingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333A42486B7740081B1CD /* DataParsingClass.swift */; };
+		655333A72487F4CD0081B1CD /* VCTableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333A62487F4CD0081B1CD /* VCTableViewExt.swift */; };
+		655333AE2487F65A0081B1CD /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333AC2487F65A0081B1CD /* CarTableViewCell.swift */; };
+		655333AF2487F65A0081B1CD /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655333AD2487F65A0081B1CD /* CarTableViewCell.xib */; };
+		655333B1248806870081B1CD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333B0248806870081B1CD /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		655333A02486A5580081B1CD /* NetworkRelatedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRelatedClass.swift; sourceTree = "<group>"; };
 		655333A22486AB040081B1CD /* CarRequestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequestStruct.swift; sourceTree = "<group>"; };
 		655333A42486B7740081B1CD /* DataParsingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsingClass.swift; sourceTree = "<group>"; };
+		655333A62487F4CD0081B1CD /* VCTableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTableViewExt.swift; sourceTree = "<group>"; };
+		655333AC2487F65A0081B1CD /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		655333AD2487F65A0081B1CD /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		655333B0248806870081B1CD /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +70,54 @@
 		6553338B2486A4D40081B1CD /* Project 1 Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				6553338C2486A4D40081B1CD /* AppDelegate.swift */,
-				6553338E2486A4D40081B1CD /* SceneDelegate.swift */,
-				655333902486A4D40081B1CD /* ViewController.swift */,
+				6553339A2486A4DD0081B1CD /* Info.plist */,
+				655333A82487F57C0081B1CD /* Additional Class&Struct */,
+				655333A92487F5AA0081B1CD /* Main */,
+				655333AA2487F5C50081B1CD /* Other */,
+				655333AB2487F5F50081B1CD /* View related */,
+			);
+			path = "Project 1 Prototype";
+			sourceTree = "<group>";
+		};
+		655333A82487F57C0081B1CD /* Additional Class&Struct */ = {
+			isa = PBXGroup;
+			children = (
 				655333A02486A5580081B1CD /* NetworkRelatedClass.swift */,
 				655333A42486B7740081B1CD /* DataParsingClass.swift */,
 				655333A22486AB040081B1CD /* CarRequestStruct.swift */,
-				655333922486A4D40081B1CD /* Main.storyboard */,
-				655333952486A4DD0081B1CD /* Assets.xcassets */,
-				655333972486A4DD0081B1CD /* LaunchScreen.storyboard */,
-				6553339A2486A4DD0081B1CD /* Info.plist */,
 			);
-			path = "Project 1 Prototype";
+			path = "Additional Class&Struct";
+			sourceTree = "<group>";
+		};
+		655333A92487F5AA0081B1CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6553338C2486A4D40081B1CD /* AppDelegate.swift */,
+				655333B0248806870081B1CD /* DetailedViewController.swift */,
+				655333A62487F4CD0081B1CD /* VCTableViewExt.swift */,
+				655333902486A4D40081B1CD /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		655333AA2487F5C50081B1CD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				655333952486A4DD0081B1CD /* Assets.xcassets */,
+				6553338E2486A4D40081B1CD /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		655333AB2487F5F50081B1CD /* View related */ = {
+			isa = PBXGroup;
+			children = (
+				655333922486A4D40081B1CD /* Main.storyboard */,
+				655333972486A4DD0081B1CD /* LaunchScreen.storyboard */,
+				655333AC2487F65A0081B1CD /* CarTableViewCell.swift */,
+				655333AD2487F65A0081B1CD /* CarTableViewCell.xib */,
+			);
+			path = "View related";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +180,7 @@
 			files = (
 				655333992486A4DD0081B1CD /* LaunchScreen.storyboard in Resources */,
 				655333962486A4DD0081B1CD /* Assets.xcassets in Resources */,
+				655333AF2487F65A0081B1CD /* CarTableViewCell.xib in Resources */,
 				655333942486A4D40081B1CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +194,12 @@
 			files = (
 				655333912486A4D40081B1CD /* ViewController.swift in Sources */,
 				655333A12486A5580081B1CD /* NetworkRelatedClass.swift in Sources */,
+				655333AE2487F65A0081B1CD /* CarTableViewCell.swift in Sources */,
 				6553338D2486A4D40081B1CD /* AppDelegate.swift in Sources */,
 				655333A32486AB040081B1CD /* CarRequestStruct.swift in Sources */,
+				655333B1248806870081B1CD /* DetailedViewController.swift in Sources */,
 				6553338F2486A4D40081B1CD /* SceneDelegate.swift in Sources */,
+				655333A72487F4CD0081B1CD /* VCTableViewExt.swift in Sources */,
 				655333A52486B7740081B1CD /* DataParsingClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

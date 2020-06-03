@@ -10,14 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     private let networkRelated = NetworkRelatedClass()
     private let dataParsing = DataParsingClass()
     private let dbLink = "http://www.blackbee.lt/a.php"
-    private var carRequestData: [CarRequestStruct] = []
+    var carRequestData: [CarRequestStruct] = []
+    let carTVCIdentifier = "carCellIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
         readDataFrom(url: dbLink)
+    }
+    
+    func setupTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        let nib = UINib(nibName: "CarTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: carTVCIdentifier)
     }
     
     func readDataFrom(url: String) {
@@ -25,6 +37,9 @@ class ViewController: UIViewController {
             guard let result = result else { return }
             self.dataParsing.parseDataOfCarRequest(fromData: result) { (parsedResult) in
                 self.carRequestData = parsedResult
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         })
     }
