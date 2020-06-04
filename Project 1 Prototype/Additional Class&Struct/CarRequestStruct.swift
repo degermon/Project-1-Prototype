@@ -9,19 +9,19 @@
 import Foundation
 
 struct CarRequestStruct: Codable {
-    let id: String?
-    let vin: String?
     let auto: String?
-    let model: String?
-    let years: String?
-    let fullmodel: String?
     let barcode: String?
-    let serija: String?
+    let dataFinish: String?
+    let finish: String?
+    let fullmodel: String?
+    let id: String?
     let kebulas: String?
+    let komentras: String?
+    let model: String?
+    let serija: String?
     let spalva: String?
     let spalvosKodas: String?
-    let komentras: String?
     let start: String?
-    let finish: String?
-    let dataFinish: String?
+    let vin: String?
+    let years: String?
 }

@@ -20,6 +20,7 @@
 		655333AE2487F65A0081B1CD /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333AC2487F65A0081B1CD /* CarTableViewCell.swift */; };
 		655333AF2487F65A0081B1CD /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655333AD2487F65A0081B1CD /* CarTableViewCell.xib */; };
 		655333B1248806870081B1CD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655333B0248806870081B1CD /* DetailedViewController.swift */; };
+		65F2B2F32489548400654836 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F2B2F22489548400654836 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		655333AC2487F65A0081B1CD /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		655333AD2487F65A0081B1CD /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		655333B0248806870081B1CD /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		65F2B2F22489548400654836 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				6553338C2486A4D40081B1CD /* AppDelegate.swift */,
 				655333B0248806870081B1CD /* DetailedViewController.swift */,
+				65F2B2F22489548400654836 /* LogInViewController.swift */,
 				655333A62487F4CD0081B1CD /* VCTableViewExt.swift */,
 				655333902486A4D40081B1CD /* ViewController.swift */,
 			);
@@ -200,6 +203,7 @@
 				655333B1248806870081B1CD /* DetailedViewController.swift in Sources */,
 				6553338F2486A4D40081B1CD /* SceneDelegate.swift in Sources */,
 				655333A72487F4CD0081B1CD /* VCTableViewExt.swift in Sources */,
+				65F2B2F32489548400654836 /* LogInViewController.swift in Sources */,
 				655333A52486B7740081B1CD /* DataParsingClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
